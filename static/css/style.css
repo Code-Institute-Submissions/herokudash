@@ -1,0 +1,49 @@
+h1{
+    font-family:sans-serif;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#sub_heading{
+    text-align: center;
+}
+
+.logo{
+    width:90%;
+}
+
+.header{
+    border-bottom: solid 1px lightgrey; 
+    padding-bottom: 5px;
+}
+
+
+
+.box{
+  padding: 0px 0px 0px 0px ;
+    text-align: center;
+   
+}
+
+.numbers{
+    text-align: center;
+    font-size:30px;
+}
+
+.pie_chart{
+    text-align: center;
+}
+
+#chart_s .x.axis text {
+ text-anchor: end !important;
+ transform: rotate(-45deg);
+}
+
+#chart_d g.row text{
+   fill:black;
+}
+
+   
+   
+
