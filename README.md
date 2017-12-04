@@ -1,11 +1,11 @@
-# Threatened Species
+# Teachta Dála
 **Interactive Data visualisation Web Application**
 
-This Web App was built as the second project for the Code Institute's classroom bootcamp. It is a Data Visualisation project using Pythons *Flask* framework.
+This Web APP is a Code Institute stream 2 projet using Data Visulation to show the Gender, Constituency, Ethnicity, Party and Age of Irish Politicans in the the House Of Representives (Teachta Dála). This project has many uses for visual and interactive journalism. I built this project to show how representitive is the Irish Government for a ever diverse Irish Socitey.
 
 ## Live Demo
 
-**Follow this link to view deployed version of the web app https://katie-dev-species-dash.herokuapp.com/**
+**Follow this link to view deployed version of the web app https://com-peterkosinski-tddashboard.herokuapp.com/#**
 
 ## Built with 
 1. Flask 
@@ -22,6 +22,8 @@ This Web App was built as the second project for the Code Institute's classroom 
 7. A dataset obtained [here](https://stats.oecd.org/Index.aspx?DataSetCode=WILD_LIFE#)
 
 ## Components
+
+
 
 #### Flask
 A Python micro-framework that was used to serve the data and render the HTML pages for this Application
@@ -56,7 +58,7 @@ Follow the below instructions to get this project up & running on Mac (commands 
 
 1. Download MongoDB & Robomongo
 2. Go to folder you want to put the cloned project in your terminal & type:
-    `$ git clone https://github.com/kgmaxwell1990/threatened-species-dashboard.git`
+    'https://github.com/PeterKosinski/herokudash.git'
 3. Create & Activate a new Virtual Environment in terminal:
     Create: `$ python3 -m venv ~/virtualenvs/name_of_environment`
     Activate: `$ source ~/virtualenvs/name_of_environment/bin/activate`
