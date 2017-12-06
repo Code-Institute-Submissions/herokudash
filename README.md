@@ -1,7 +1,7 @@
-# Teachta Dála
+# Irish politicans in Dáil Éireann (House Of Representives) by Age, Gender, Party, Ethnicity and Constituency.
 **Interactive Data visualisation Web Application**
 
-This Web APP is a Code Institute stream 2 projet using Data Visulation to show the Gender, Constituency, Ethnicity, Party and Age of Irish Politicans in the the House Of Representives (Teachta Dála). This project has many uses for visual and interactive journalism. I built this project to show how representitive is the Irish Government for a ever diverse Irish Socitey.
+This Web APP is a Code Institute stream 2 projet using Data Visulation to show the Gender, Constituency, Ethnicity, Party and Age of Irish Politicans in the the House Of Representives (Teachta Dála). This project has many uses for visual and interactive journalism. I built this project to show how representitive is the Irish Government for a ever diverse Irish Socitey. 
 
 ## Live Demo
 
@@ -19,7 +19,8 @@ This Web APP is a Code Institute stream 2 projet using Data Visulation to show t
     * dc.js
     * crossfilter.js
     * queue.js
-7. A dataset obtained [here](https://stats.oecd.org/Index.aspx?DataSetCode=WILD_LIFE#)
+    * intro.js
+8. A dataset obtained [here](https://stats.oecd.org/Index.aspx?DataSetCode=WILD_LIFE#)
 
 ## Components
 
@@ -46,6 +47,8 @@ A JavaScript based visualisation engine that renders interactive charts and grap
 #### Dc.js
 A Javascript based wrapper library for d3.js - this made plotting the charts easier
 
+#### Intro.js
+Step-by-step guide and feature introduction for your website.
 
 ## Deployment / Hosting
 
