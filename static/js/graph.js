@@ -11,6 +11,8 @@ queue()
     
         var gender_dim = ndx.dimension(dc.pluck('Gender'));
         var count = gender_dim.group();
+        var colorScale = d3.scale.ordinal().range([d3.rgb("#fb9867"), d3.rgb('#FFF500')]);
+
     
         dc.barChart('#chart1')
             .height(300)
@@ -24,10 +26,12 @@ queue()
             
             .transitionDuration(500)
             .renderHorizontalGridLines(true)
+            .colors(colorScale)
             .x(d3.scale.ordinal())
             .xUnits(dc.units.ordinal)
             .yAxisLabel("Number of TD'S")
             .yAxis().ticks(10);
+
             
     
      var number_of_tds = ndx.groupAll();
@@ -85,6 +89,7 @@ queue()
         
           var gender_dim = ndx.dimension(dc.pluck('Ethnicty'));
         var count_by_rank = gender_dim.group();
+        var colorScale = d3.scale.ordinal().range([d3.rgb("#acfa66"), d3.rgb('#FFF500')]);
         
         dc.barChart('#chart4')
             .height(300)
@@ -94,6 +99,7 @@ queue()
             .group(count_by_rank)
             .transitionDuration(500)
             .renderHorizontalGridLines(true)
+            .colors(colorScale)
             .x(d3.scale.ordinal())
             .xUnits(dc.units.ordinal)
             .yAxisLabel("Number of TD'S")
@@ -139,12 +145,11 @@ queue()
         var partyam = partyname_dim.group();
         
         dc.rowChart('#chart_d')
-            .height(300)
-            .width(500)
-            .margins({top:10, right:50, bottom:30, left:50})
+            .height(400)
+            .width(850)
+            .margins({top:10, right:150, bottom:30, left:50})
             .dimension(partyname_dim)
             .group(partyam)
-            
             .transitionDuration(500)
 
       var consname_dim = ndx.dimension(dc.pluck('Constituency'));
@@ -219,36 +224,6 @@ dc.numberDisplay("#chart8")
     }
   );
        
-           
-        
-    //     var cons_group = consname_dim.group().reduceSum();
-    
-    // var constituency_dim = ndx.dimension(dc.pluck('Constituency'))
-    // var consname_count = constituency_dim.group().reduceCount(function(d) {
-    //     return 0;
-    // });
-        
-        
-    // console.log(consname_count.all())
-    
-    // dc.numberDisplay("#chart7")
-    //     .formatNumber(d3.format("d"))
-    //     .valueAccessor(function (d) {
-    //         return (+d.count);
-    //     })
-    //     .group(consname_count);
-           
-    //       var chart = dc.numberDisplay("#chart7");
-    // chart
-    //     .formatNumber(d3.format("d"))
-    //     .valueAccessor(function (d) {
-    //         return (+d);
-    //     })
-    //     .group(cons_group)
-    
-    
-   
-
       var runDimension  = ndx.dimension(dc.pluck('Constituency'));
   var speedSumGroup = runDimension.group();
   var chart = dc.pieChart("#test");
@@ -258,7 +233,7 @@ dc.numberDisplay("#chart8")
   
   
   chart
-      .width(600)
+      .width(500)
       .height(500)
       .slicesCap(47)
       .innerRadius(100)
