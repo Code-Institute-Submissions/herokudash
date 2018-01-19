@@ -146,7 +146,7 @@ queue()
         
         dc.rowChart('#chart_d')
             .height(400)
-            .width(850)
+            .width(650)
             .margins({top:10, right:150, bottom:30, left:50})
             .dimension(partyname_dim)
             .group(partyam)
